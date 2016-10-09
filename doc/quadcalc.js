@@ -9,9 +9,7 @@ document.getElementById("submit").onclick = function() {
     c = parseFloat(c);
     
     var insideSquareRoot = (a * c * -4);
-
     insideSquareRoot = (Math.pow(b, 2) + insideSquareRoot);
-
     var squareRoot = (Math.sqrt(insideSquareRoot));
 
     var negativeBValue = (0 - b);
@@ -19,29 +17,19 @@ document.getElementById("submit").onclick = function() {
     var denominator = (2 * a);
 
     var numeratorPlus = (negativeBValue + squareRoot);
-
     var answerPlus = (numeratorPlus / denominator);
     
     var numeratorNegative = (negativeBValue - squareRoot);
-
     var answerNegative = (numeratorNegative / denominator);
     
     var finalAnswerPlus = ("x = " + answerPlus);
-    
     var finalAnswerNegative = ("x = " + answerNegative);
     
-    if ( isNaN(answerPlus, answerNegative) ) {
-        
+    if ( isNaN(answerPlus, answerNegative) ) {  
         document.getElementById("xvaluefirst").innerHTML = "no answer :(";
-        
         document.getElementById("xvaluesecond").innerHTML = "";
-    
     } else {
-    
         document.getElementById("xvaluefirst").innerHTML = finalAnswerPlus;
-        
         document.getElementById("xvaluesecond").innerHTML = finalAnswerNegative;
-    
     }
-    
 };
