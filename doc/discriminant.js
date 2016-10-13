@@ -4,6 +4,7 @@ document.getElementById("submit").onclick = function() {
     var a = $("#avalue").val();
     var c = $("#cvalue").val();
     
+    
     b = parseFloat(b);
     a = parseFloat(a);
     c = parseFloat(c);
@@ -22,7 +23,13 @@ document.getElementById("submit").onclick = function() {
         
         document.getElementById("discriminant").innerHTML = "2 Roots";
         
-    } else {
+    }
+    
+     else if (isNaN(a) || isNaN(b) || isNaN(c)) {
+        document.getElementById("discriminant").innerHTML = "No answer oops :(";
+    }
+    
+    else {
         
         document.getElementById("discriminant").innerHTML = "1 Root";
 
