@@ -14,6 +14,8 @@ document.getElementById("submit").onclick = function() {
     var d = termNumber*commonDif
     
     var termValue = (firstTerm + d)
+    
+    var finalAnswer = "An = " + termValue
         
 
     if ( isNaN(firstTerm) || isNaN(commonDif) || isNaN(nTerm) ) { 
@@ -22,6 +24,6 @@ document.getElementById("submit").onclick = function() {
         
     } else {
         
-        document.getElementById("term").innerHTML = termValue
+        document.getElementById("term").innerHTML = finalAnswer
     }
 };
