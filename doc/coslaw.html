@@ -4,7 +4,7 @@
     
     <head>
         
-        <title>Pythagorean</title>
+        <title>Cosine Law</title>
         
         <link href="style.css" rel="stylesheet" type="text/css">
         <link href="hover.css" rel="stylesheet" type="text/css">
@@ -14,25 +14,26 @@
     
     <body>
         
-        <h1>Pythagorean Formula</h1>
-        <h2>Find out the length of the hypotenuse</h2>
+        <h1>Cosine Law</h1>
+        <h2>Plug in the values to find the value of C</h2>
         
-        <img src="../misc/pythagorean theorum.png" height=60>
-        <p>Insert pythagorean formula here</p>
-        <br>
-        
-        <input id="avalue" placeholder="A Value?">
-        <input id="bvalue" placeholder="B Value?">
-
+         <div class="calculator">
+            
+            <input id="avalue" placeholder="a value?">
+            <input id="bvalue" placeholder="b value?">
+            <input id="cvalue" placeholder="C value?">
+            
             <button class="hvr-shrink"  type="button" id="submit"> Calculate </button>
             
-            <p id="hypotenuse"> </p>
+            <p id="c"> </p>
 
+        </div>
         
-        <script type="text/javascript" src="pythagorean.js"></script>
+        <script type="text/javascript" src="coslaw.js"></script>
         
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
-
+        
+        
     </body>
     
 </html>

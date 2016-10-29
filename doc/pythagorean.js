@@ -18,7 +18,7 @@ document.getElementById("submit").onclick = function() {
         
     } else {
         
-        document.getElementById("hypotenuse").innerHTML = Math.round(c);
+        document.getElementById("hypotenuse").innerHTML = Math.round(c*10)/10;
 
     }
 };
